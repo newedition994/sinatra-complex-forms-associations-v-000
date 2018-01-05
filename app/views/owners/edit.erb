@@ -8,6 +8,6 @@
   <label>Choose an existing pet: </label>
   <br>
   <%Pet.all.each do |pet|%>
-    <>
+    <input type="checkbox" name="owner[pet_ids]" id="<%=pet.id%>">
   <%end%>
 </form>
