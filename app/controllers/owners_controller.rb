@@ -1,5 +1,9 @@
 class OwnersController < ApplicationController
 
+  get '/' do
+    erb :'/owners/index'
+  end
+
   get '/owners' do
     @owners = Owner.all
     erb :'/owners/index' 
