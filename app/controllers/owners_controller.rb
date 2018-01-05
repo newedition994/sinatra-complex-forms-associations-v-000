@@ -33,6 +33,6 @@ class OwnersController < ApplicationController
   end
 
   post '/owners/:id' do
-
+    @owner = Owner.find(params[:id])
   end
 end
